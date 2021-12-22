@@ -1,0 +1,53 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: query_pred
+  examples: |
+    - [https://open.spotify.com/track/6yXPuvw6Z5ll54ikHsTWJH?si=e4b8ff95c1484b68](link)
+    - [https://open.spotify.com/track/5gWmQkHPvSbPszfzg1Qm8w?si=f9c962a97b974c6b](link)
+    - [https://open.spotify.com/track/5hU6UR3JAmobbRF8in1hpN?si=baa0ae04137941ad](link)
+    - [https://open.spotify.com/track/2LKOHdMsL0K9KwcPRlJK2v?si=b7b694f5e49e4616](link)
+    - [https://open.spotify.com/track/2afipVQcYOHwXFxrQdoCZW?si=c2dcb26140e04047](link)
+    - [https://open.spotify.com/track/49iShE7G4gymrZtEfCAGnl?si=af09186593384904](link)
+    - [https://open.spotify.com/track/5QstuWTWfsMkiiSugZnRNq?si=23852b1ffc8e4588](link)
+    - [https://open.spotify.com/track/20WOdCjMfASpusA4Yq3LH5?si=eacfd47feb964e49](link)
+    - [https://open.spotify.com/track/0s8Tl9PakBVK8WGPZWgo23?si=6b4234ec22234329](link)
+    - [https://open.spotify.com/track/7JmBK5wlbs6Hj8hlQNOQ07?si=20cb4076d24e43f4](link)
+    - [https://open.spotify.com/track/5h8D0plLXZpFqmAHYnIXjg?si=6fc1f471e2d04d8e](link)
+    - [https://open.spotify.com/track/42MVeCHFVCM9B9wF2ybTDk?si=bd76a061d201496d](link)
+    - [https://open.spotify.com/track/7qu4Xo5Tq9BNgLKWx3PxtD?si=1c6f5a0b02ca4aae](link)
+    - [https://open.spotify.com/track/1jJ8KfVB4WDhvXZIDGn7YN?si=b80a3339ba1f4901](link)
+    - [https://open.spotify.com/track/66VyW7Qqdj1fTm50vwdlKS?si=39d1df60dc654379](link)
+    - [https://open.spotify.com/track/3JsoqfnHYCocNvINSuQMlX?si=57d1c202224e431d](link)
+    - [https://open.spotify.com/track/31oqOyJpDvqXTmXvkK0N2a?si=36ec7e3b74b44b0a](link)
+    - [https://open.spotify.com/track/78VqObueVu8P20WDLDZM4G?si=e60f74d0ee5146a7](link)

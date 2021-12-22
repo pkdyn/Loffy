@@ -1,0 +1,34 @@
+version: "2.0"
+language: en
+pipeline:
+  - name: "SpacyNLP"
+  # language model to load
+    model: "en_core_web_md"
+    case_sensitive: False
+  #- name: WhitespaceTokenizer
+  - name: "SpacyTokenizer"
+  # Flag to check whether to split intents
+    "intent_tokenization_flag": False
+  # Symbol on which intent should be split
+    "intent_split_symbol": "_"
+  # Regular expression to detect tokens
+    "token_pattern": None
+  - name: "SpacyFeaturizer"
+    "pooling": "mean"
+  #- name: LanguageModelFeaturizer
+  #  model_name: "bert"
+  #  model_weights: "rasa/LaBSE"
+  - name: RegexFeaturizer
+  - name: DIETClassifier
+    epochs: 100
+    learning_rate: 0.001
+  - name: ResponseSelector
+    epochs: 100
+    learning_rate: 0.001
+  - name: EntitySynonymMapper
+  - name: FallbackClassifier
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    epochs: 100
+  - name: RulePolicy

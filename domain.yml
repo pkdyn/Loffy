@@ -1,0 +1,22 @@
+intents:
+  - greet
+  - goodbye
+  - query_pred
+  
+entities:
+  - link
+  
+slots:
+  link:
+    type: text
+    
+responses:
+  utter_greet:
+    - text: Hello, I’m Loffy, I can check whether a song is Lofi. You can paste the Spotify link to check.
+  utter_goodbye:
+    - text: Goodbye!
+    
+actions:
+  - action_query_pred
+  - utter_goodbye
+  - utter_greet
